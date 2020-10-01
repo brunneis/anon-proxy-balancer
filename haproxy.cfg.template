@@ -1,0 +1,19 @@
+global
+    daemon
+    maxconn 10000   
+
+defaults
+    timeout connect 5s
+    timeout client 5s
+    timeout server 10s
+
+frontend localhost
+    mode tcp
+    option tcplog
+    bind *:9999
+    use_backend proxy-balancer
+
+backend proxy-balancer
+    mode tcp
+    balance roundrobin
+    # option ssl-hello-chk
