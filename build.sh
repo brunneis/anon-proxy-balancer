@@ -1,2 +1,2 @@
 #!/bin/bash
-docker build -t brunneis/proxy-balancer .
+docker build -t brunneis/anon-proxy-balancer .

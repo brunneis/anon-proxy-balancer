@@ -9,7 +9,7 @@ docker-compose up -d
 
 Alternatively:
 ```bash
-docker run -p 9999:9999 -tid brunneis/proxy-balancer
+docker run -p 9999:9999 -tid brunneis/anon-proxy-balancer
 ```
 
 ## Connection from Python

@@ -9,7 +9,7 @@ x-logging: &default-logging
 services:
 
   proxy-balancer:
-    image: brunneis/proxy-balancer
+    image: brunneis/anon-proxy-balancer
     ports:
       - 9999:9999
     logging: *default-logging
